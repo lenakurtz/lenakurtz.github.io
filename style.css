@@ -63,20 +63,56 @@ footer {
    top: -10vh;
 }
 
-.gridobj {
+article {
     
     border-style: solid;
     height: 60vh;
     margin: 2vh;
     box-shadow: 10px 10px 10px rgb(21, 0, 255);
+    background-color: blue;
 
 }
 
-.gridobj img {
+
+article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    top:0%;
 }
+
+article img:hover {
+    filter: blur(0.1rem);
+    mix-blend-mode: luminosity ;
+}
+
+article h3 {
+    position: absolute;
+    visibility: hidden;
+    color:aliceblue;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+article p {
+    position: fixed;
+    font-size: 4rem;
+    color: blue;
+    text-shadow: rgb(243, 243, 243) 1px 0 10px;
+    visibility: hidden;
+    mix-blend-mode: none;
+    z-index: 10;
+width: 100%;
+    padding: 0.5rem;
+
+}
+
+article:hover p {
+    visibility: visible;
+}
+
+
 
 
 .aboutgrid {
