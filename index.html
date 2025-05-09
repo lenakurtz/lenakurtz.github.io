@@ -1,44 +1,154 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Lena Kurtz</title>
-        <link rel="stylesheet" href="style.css">
-
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/amt6wmf.css">
+    <title> Hackermäuse FFC</title>
+</head>
 <body>
-<header>
-    <h1><a href="/index.html"> Portfolio</a></h1> 
-<p> <a href="/About.html">About</a>; <a href="/BA.html">BA-Project</a>; fashion design; art; Instagram; Github;</p></header>
+    <nav>
+        <div class="nav_element_1"> <a href="101diemäuse.html">about Häckermäuse FFC</a> </div>
+        <div class="nav_element_1"> <a href="einfacheAnsicht/eA_Index.html">einfache Ansicht</a></div> 
+        <div class="nav_element_1"> <a href="102käse.html">hier gibts Käse</a></div> 
+    </nav>
+   
+<main>
+    <header class="hackermause">
+      
+         <h4>Häckermäuse </h4>
+    
+    </header>
 
-<div class="container">
-    <article >
-        <h3>Chaos Computer Craft</h3>
-        <a href="/BA.html"><p>Chaos Computer Craft</p>
-        <img src="/img/LenasBachelor-38.jpg"> </a>
+   
+
+    <button id="readme" onclick="showReadme()"> <h1>Read Me!</h1></button>
+
+     <div id="readme_text" class="nav">
+       
+        <h6>
+            Huhu und willkommen bei den Häckermäusen! Auf dieser Seite geht es ums Hacken, um Computer und Anderes. Hacker sein bedeutet so viel mehr als Unfug mit den Daten anderer Leute anstellen. Hier kannst du herausfinden was es mit der Hackerethik auf sich hat und was hinter den einzelnen Grundsätzen steckt.
+            Die Hackerethik gibt es schon seit den 80er Jahren, sie ist aber bis heute wichitg um den Spaß am Gerät nicht zu verlieren und das beste aus seiner Computerzeit zu machen! Es gibt viel zu Entdecken, viel Spaß beim umschauen :)
+        </h6>
+        <button id="close_readme" onclick="hideReadme()"> <p>x</p></button>
+    </div> 
+
+    <article class="neinmama">
+        <h1> Nein Mama, das sind nicht alles Verbrecher </h1>
+
     </article>
-    <article><a href="/virtualmateriality.html"><p>Virtual Materiality</p><img src="/img/VM1.png"> </a> </article>
-    <article> --</article>
-    <article>the day the lisa died</article>
-    <article>aufhören</article>
-    <article> CLO</article>
-    <article>fotokurs</article>
-    <article>hello</article>
-    <article>hello</article>
-    <article>hello</article>
-    <article>hello</article>
-    <article>hello</article>
+    <!-- <article class="neinmama_hover">
+        <li> hacker haben einen schlechten ruf. aber eigentlich sind das einfach nur ganz viele chill guys die nen plan haben  </li>
+        <li>hallo hier fehlt text</li>
 
-  
-</div>
-
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. If you can read this: it worked!
-    <a href="/About.html">About Me</a>
-</p>
+    </article> -->
+   
 
 
-<footer>
-    <p>Footer</p>
-</footer>
+    <section class="hackerethik_alle">
+
+        
+
+        <div class="GR_0 hackerethik_boxen" > 
+            <p>Die Hackerethik ist die Grundlage für einen schöpferisch-kritischen Umgang mit Technologie.
+            </p>
+
+        </div>
+        <div class="GR_1 hackerethik_boxen" > 
+            <p> Der Zugang zu Computern und allem, was einem zeigen kann, wie diese Welt funktioniert, sollte unbegrenzt und vollständig sein</p>
+           
+            <a href="02_informationen.html"> <button class="tellme"> tell me more </button> </a>
+
+        </div>
+        <div class="GR_2 hackerethik_boxen" > 
+            <p>Alle Informationen müssen frei sein.</p>
+
+            <a href="01_zugang.html"> <button class="tellme"> tell me more </button> </a>
+
+        </div>
+        <div class="GR_3 hackerethik_boxen" > 
+            <p>Mißtraue Autoritäten – fördere Dezentralisierung.</p>
+
+            <a href="03_dezentrale.html"> <button class="tellme"> tell me more </button> </a>
+
+        </div>
+        <div class="GR_4 hackerethik_boxen" >
+            <p>Beurteile einen Hacker nach dem, was er tut, und nicht nach üblichen Kriterien wie Aussehen, Alter, Herkunft, Spezies, Geschlecht oder gesellschaftliche Stellung.</p>
+             
+                <!-- <a href="/04_hacker.html"> <button class="tellme"> tell me more </button> </a> -->
+            
+
+            </div>
+        <div class="GR_5 hackerethik_boxen" > 
+            <p>Man kann mit einem Computer Kunst und Schönheit schaffen.</p>
+
+            <a href="05_kunst.html"> <button class="tellme"> tell me more </button> </a>
+
+        </div>
+        <div class="GR_6 hackerethik_boxen" > 
+            <p>Computer können dein Leben zum Besseren verändern.</p>
+
+             <a href="06_lebenverb.html"> <button class="tellme"> tell me more </button> </a>
+
+            </div>
+        <div class="GR_7 hackerethik_boxen" > 
+            <p>Mülle nicht in den Daten anderer Leute.</p>
+
+             <a href="07_mull.html"> <button class="tellme"> tell me more </button> </a>
+
+            </div>
+        <div class="GR_8 hackerethik_boxen" > 
+            <p>Öffentliche Daten nützen, private Daten schützen.</p>
+
+            <a href="08_datenschutzen.html"> <button class="tellme"> tell me more </button> </a>
+        </div>
+       
+
+    </section>
+    
+     <article class="Lebensphilosphie">
+       <h3>Hacken kann man nicht lernen, Hacken ist eine Lebensphilosphie</h3>
+    </article>
+    <article class="hacken">
+        <p>Gibt's auch veganes Hack?</p>
+
+    </article>
+    <figure class="chaos_gif">
+        <img src="assets/img/index/Chaos.gif" alt="welcome to the chaos gif in grüner schrift">
+    </figure>
+    <figure class="hackermaus_png">
+        <img src="assets/img/index/häckermauspink.gif" alt="illustration einer pinken maus">
+    </figure>
+    <article class="crime">
+        <h2>my greatest crime is that of curiosity </h2>
+
+    </article>
+<article class="Datenautobahn"> 
+    <h5>Unterwegs auf der Datenautobahn</h5>
+</article>
+    <figure class="firefox_gif">
+        <a href="firefox.html"><img id="fox" src="assets/img/index/firefox.gif" alt="illsutriertes firefox logo"></a>
+    </figure>
+    <!-- <div class="donotpress">
+    <h5> Do not Press !!!!1!! </h5>
+    </div> -->
+    
+    <!-- <figure class="red_button_pfeile">
+        <img src="/assets/img/index/pfeile.png" alt="illsutriertes roter knopf nicht drücken!" width="1000">
+    </figure> -->
+    <figure class="red_button">
+       <a href="/103gehackt.html"> <img src="assets/img/index/bigredbutton_2.gif" alt="illsutriertes roter knopf nicht drücken!" width="900"> </a>
+    </figure>
+    
+</main>
+
+
+
+<script src="assets/js/script.js"></script>
+
+
 </body>
 </html>

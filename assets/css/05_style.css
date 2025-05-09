@@ -1,0 +1,392 @@
+
+/* ---------------------------------------
+FONTS
+--------------------------------------------*/
+
+h1{
+    font-family: Chicago;
+    font-size: 9vw;
+    line-height: 8vw;
+
+}
+
+h2{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5svw;
+    line-height: 2.9svw;
+}
+
+h3{
+    
+    font-family: Garamont_bold;
+   
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+    font-family:Pixelscript;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+
+
+/* ---------------------------------------
+GRUNDLEGENDES 
+--------------------------------------------*/
+
+
+
+body{
+    /* background-image: url(/assets/img/05_img/pixel.png); */
+    background-color: rgb(240, 0, 108);
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(50, 5svw);
+    grid-template-columns:repeat(20,5%)  ;
+    /* border:solid rgb(22, 54, 22) 4px; */
+    margin-top: -3.7rem;
+    position: absolute;
+    width: 100svw;
+    overflow: hidden;
+}
+
+
+button {
+    background-color: rgb(208, 207, 207);
+    border-left: 3px solid rgb(237, 237, 237);
+    border-top: 3px solid rgb(252, 249, 249);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+
+    margin-top: 1svw;
+    max-width: 45svw;
+    padding: .2svw;
+    
+}
+
+
+video{
+    background-color: rgb(208, 207, 207);
+    border-left: 6px solid rgb(237, 237, 237);
+    border-top: 6px solid rgb(252, 249, 249);
+    border-bottom: 6px solid gray;
+    border-right: 6px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+/* ---------------------------------------
+SECTION 1 
+--------------------------------------------*/
+
+.swirl{
+    grid-row: 1;
+    grid-column: 1;
+    width: 100svw;
+
+}
+.swirl img{
+    
+    width: 120svw;
+
+}
+.swirl1{
+    grid-row: 1;
+    grid-column: 1;
+    width: 100svw;
+    
+    
+
+}
+.swirl1 img{
+
+    width: 120svw;
+    mix-blend-mode: lighten;
+
+}
+.uberschrift{
+    grid-row: 2;
+    grid-column: 1;
+
+    width: 100svw;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.226);
+    
+    text-shadow: 2px 0 0px #460072, 3px 2px 0px rgb(132, 255, 2), 3px 0 3px #9000ff, 5px 0 3px #3a004f, 6px 2px 3px rgba(255, 255, 255, 0.802),  9px 2px 9px rgba(255, 255, 255, 0.5), 9px 0 18px #91ff00,  12px 0 30px rgb(212, 255, 0),   15px 0 45px #80FF00;
+
+}
+
+
+
+/* ---------------------------------------
+WAR 
+--------------------------------------------*/
+.olia_War{
+    grid-row: 9;
+    grid-column: 2;
+
+    font-size: 2.6svw;
+    width: 40svw;
+
+    line-height: 2.7svw;
+
+    color:#460072;
+}
+
+.olia_War p {
+    margin: 1svw;
+    padding: 1.5svw;
+    background-color: #80FF00;
+    border-radius: 30px;
+    height: 10svw;
+    mix-blend-mode: difference;
+
+   border: solid red 5px;
+}
+
+/* ---------------------------------------
+Jodi
+--------------------------------------------*/
+
+.jodi{
+    
+    grid-row: 19;
+    grid-column: 11;
+
+    width: 60svw;
+    font-size: 2.6svw;
+}
+
+
+.jodi_02{
+    
+    grid-row: 24;
+    grid-column: 6;
+
+    width: 50svw;
+    font-size: 2svw;
+
+    z-index: -1;
+}
+
+.jodi_text{
+
+    grid-row: 22;
+    grid-column: 3;
+
+    color: yellow;
+    padding: 2svw;
+    width: 50svw;
+    
+    height: 22svw;
+}
+
+.jodi_text:hover {
+   
+    height: 22svw;
+    background-color: #9000ff;
+    border-radius: 30px;
+
+    z-index: 3;
+}
+/* ---------------------------------------
+Graveyard 
+--------------------------------------------*/
+
+.graveyard{
+
+    grid-row: 31;
+    grid-column: 2;
+
+    width: 60svw;
+    font-size: 2svw;
+
+  
+}
+
+.graveyard img{
+    border-radius: 30px;
+
+}
+/* ---------------------------------------
+Oliana 
+--------------------------------------------*/
+
+.oliaLiana{
+    grid-row: 35;
+    grid-column: 8;
+    mix-blend-mode: difference;
+    width: 60svw;
+}
+
+.oliaLiana:hover{
+    mix-blend-mode: difference;
+}
+
+/* ---------------------------------------
+linkssammlung
+--------------------------------------------*/
+.there_is_more{
+
+
+    grid-row: 36;
+    grid-column: 10;
+    width: 50svw;
+
+    background-color: #08eb00;
+    padding: 2svw;
+    padding-top: 35svw;
+
+    height: 90svw;
+
+}
+/* ---------------------------------------
+SECTION 2
+--------------------------------------------*/
+
+
+
+.netart_01{
+    width: 60svw;
+    margin-top: 3svw  
+
+}
+
+.netart_01:hover{
+    mix-blend-mode: multiply ; 
+
+}
+
+.netart_01_1{
+
+    grid-row: 18;
+    grid-column: 1;
+    width: 30svw;
+
+    
+
+}
+.netart_02{
+
+    grid-row: 16;
+    grid-column: 9;
+    width: 40svw;
+
+}
+
+.zitat {
+
+    color: yellow;
+    grid-row: 10;
+    grid-column: 9;
+    width: 55svw;
+    height: 17svw;
+
+    padding: 1svw;
+
+    background-color: #9000ffb3;
+
+}
+
+.ai_kunst{
+    color: #0c7928;
+    grid-row: 48;
+    grid-column: 2;
+    width: 60svw;
+    /* text-shadow: 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00; */
+    text-shadow: 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 6px #6DFF00, 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66), 0px 0px 14px rgba(255,0,245,0.66);
+    font-size: 6svw;
+    line-height: 4svw;
+
+}
+
+
+
+
+.muster{
+    grid-row: 13;
+    grid-column: 0;
+    width: 200svw;
+
+    z-index: -2;
+    
+    
+}
+
+.musterGruen{
+    grid-row: 29;
+    grid-column: 0;
+    width: 200svw;
+
+    z-index: -2;
+
+}
+
+
+/* ---------------------------------------
+GIFS 
+--------------------------------------------*/
+
+.gif_01 {
+    grid-row: 2;
+    grid-column: 2;
+    width: 20svw;
+
+}
+
+.gif_02 {
+    grid-row: 9;
+    grid-column: 2;
+    width: 80svw;
+    
+    
+    
+}
+.gif_03 {
+    grid-row: 3;
+    grid-column: 17;
+    width: 20svw;
+    z-index: -1;
+    
+    
+}
+.gif_04 {
+    grid-row: 19;
+    grid-column: 17;
+    width: 20svw;
+    z-index: 2;
+    
+    
+}
+.gif_05 {
+    grid-row: 6;
+    grid-column: 6;
+    width: 20svw;
+    mix-blend-mode: lighten;
+    
+    
+}
+.gif_06 {
+    grid-row: 17;
+    grid-column: 17;
+    width: 20svw;
+    
+    
+    
+}
+
+
+

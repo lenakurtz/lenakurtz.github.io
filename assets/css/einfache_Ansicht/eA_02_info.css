@@ -1,0 +1,187 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+/* ===============================
+FONTS
+=============================== */
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-decoration:underline;
+    
+   
+}
+
+a:hover{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+   color: blue;
+}
+
+
+/* ===============================
+Grundlegendes
+=============================== */
+
+
+
+nav{
+   margin-top: 2vw;
+    margin-right: 2vw;
+   
+    display: flex;
+    justify-content: flex-end;
+}
+nav a{
+    border: solid black 2px;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+main{
+    padding: 1rem;
+}
+
+
+button{
+    margin-left: 2rem;
+    padding: .1rem;
+}
+
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+article{
+    border: solid black 2px;
+    padding: 1vw;
+    margin: 1vw;
+
+    width: 45svw;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.66);
+
+}

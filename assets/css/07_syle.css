@@ -1,0 +1,88 @@
+body{
+background-image: url(../../assets/img/07_img/graybrickwall.jpg);
+
+}
+
+header {
+    margin: 1vw;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    text-shadow: 5px 5px 2px greenyellow ;
+     font-size: 8vw;
+     font-family: hydrogen;
+     
+ }
+ 
+h2{
+
+    font-family: ComicSans;
+    font-size: 5svw;
+    color: magenta;
+   
+}
+
+main{
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; 
+    flex-wrap: wrap; */
+}
+
+
+p {
+    font-size: 1.2vw;
+    font-family: Garamont;
+}
+
+/* img{
+    width: 20svw;
+} */
+section {
+    width: 50%;
+    padding: 4vw;
+}
+
+article {
+    border: solid 1px black;
+    background-color:rgb(234, 234, 234);
+    opacity: 0;
+    margin-bottom: 2vw;
+    padding: 0.2vw;
+}
+
+
+#Introduction > article {
+    border: solid 1px black;
+    background-color:rgb(234, 234, 234);
+    opacity: 1;
+    margin-bottom: 2vw;
+}
+#dumpsterimg {
+    filter: drop-shadow(16px 16px 30px rgb(164, 217, 111));
+    animation: glow 3s infinite;
+}
+#dumpsterimg:hover {
+cursor: pointer;
+
+}
+
+@keyframes glow{
+    0%{
+        filter: drop-shadow(16px 16px 20px rgb(142, 249, 35));
+    }
+    50%{
+        filter: drop-shadow(16px 16px 60px rgb(164, 217, 111));
+    }
+    100%{
+        filter: drop-shadow(16px 16px 20px rgb(142, 249, 35));
+    }
+}

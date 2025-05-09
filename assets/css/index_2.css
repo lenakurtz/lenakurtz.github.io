@@ -1,0 +1,223 @@
+
+/* --------------------------------------------------------------------------------------
+HINTERGRUND
+-------------------------------------------------------------------------------------- */
+
+body {
+    
+    
+    width: 100vw;
+    background-image: url(assets/img/index/karos.png);
+    /* height: 100svh;
+    overflow: scroll; */
+}
+
+/* --------------------------------------------------------------------------------------
+GRID
+-------------------------------------------------------------------------------------- */
+main{
+    display: grid;
+    grid-template-rows: repeat(200, 4rem);
+    grid-template-columns:repeat(20,5%)  ;
+    /* border:solid rgb(22, 54, 22) 4px; */
+    position: absolute;
+    width: 100svw;
+    overflow: hidden;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------
+FONTS
+-------------------------------------------------------------------------------------- */
+h1 {
+    font-family: pf-pixelscript, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 7vw;
+}
+
+h2 {
+    font-family: CompLiquid;
+    font-size: 12vw;
+}
+
+h3 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+h4{
+    font-family: cofo-sans-pixel, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+/* p {
+    font-family: aglet-mono, mono;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5vw;
+} */
+
+p {
+   
+
+    font-family: cofo-sans-pixel, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+
+    
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: cofo-sans-pixel, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 1vw;
+
+    list-style: none;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------
+NEU HACKER ETHIK
+-------------------------------------------------------------------------------------- */
+
+
+.HE_grid{
+    display: grid;
+    grid-template-columns: repeat(6, 12svw);
+    grid-template-rows: repeat(5, 10svh);
+
+   
+}
+
+.hackerethik_boxen{
+    border-left: 3px solid rgb(237, 237, 237);
+    border-top: 3px solid rgb(252, 249, 249);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+    background-color: rgb(208, 207, 207);
+   
+    padding: .5rem;
+
+    
+
+}
+
+
+.button{
+    background-color: rgb(208, 207, 207);
+    border-left: 2px solid rgb(252, 249, 249);
+    border-top: 2px solid rgb(252, 249, 249);
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+
+    
+    width: 5svw;
+    height: 2.2vh;
+
+    text-align: center;
+    margin-left: 7svw;
+    margin-top: 2svh;
+    
+   
+    
+}
+
+.button:hover{
+    
+    box-shadow: 0 0 0 2px blue;
+
+}
+
+.GR_0{
+    grid-row: 1;
+    grid-column: 5 ;
+
+    width: 20svw;
+    height: 10svh;
+    background-color: blue;
+    color: white;
+}
+.GR_1{
+    grid-row: 1;
+    grid-column: 1 ;
+
+    width: 20svw;
+    height: 20svh;
+}
+.GR_2{
+    grid-row: 2;
+    grid-column: 2 ;
+
+    width: 20svw;
+    height: 15svh;
+}
+.GR_2{
+    grid-row: 1;
+    grid-column: 3 ;
+
+    width: 20svw;
+    height: 15svh;
+}
+.GR_3{
+    grid-row: 4;
+    grid-column: 5 ;
+
+    width: 20svw;
+    height: 15svh;
+    z-index: 2;
+}
+.GR_4{
+    grid-row: 5;
+    grid-column: 3 ;
+
+    width: 20svw;
+    height: 22svh;
+}
+.GR_5{
+    grid-row: 3;
+    grid-column: 4 ;
+    width: 20svw;
+    height: 15svh;
+}
+.GR_6{
+    grid-row: 2;
+    grid-column: 6 ;
+
+    width: 20svw;
+    height: 15svh;
+}
+.GR_7{
+    grid-row: 3;
+    grid-column: 2 ;
+
+    width: 20svw;
+    height: 12svh;
+}
+.GR_8{
+    grid-row: 5;
+    grid-column: 1 ;
+
+    width: 20svw;
+    height: 12svh;
+}

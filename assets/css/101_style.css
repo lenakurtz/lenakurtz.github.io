@@ -1,0 +1,235 @@
+/* --------------------------------------------------------------------------------------
+FONT
+-------------------------------------------------------------------------------------- */
+h1 {
+    font-family: pf-pixelscript, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 5.2vw;
+
+    color: red;
+    text-shadow: -1px -1px 10px rgba(255,0,0,0.9), -2px 2px 0px rgb(0, 0, 0);
+    /* text-shadow: -2px 2px 2px rgba(255,255,255,1); */
+
+    
+
+}
+
+p{
+    font-family: cofo-sans-pixel, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+   
+}
+
+li{
+    font-family: ComicSans;
+    list-style: inside;
+}
+
+
+
+body{
+    
+    background-image: url(../../assets/img/index/karos.png);
+/* background: rgb(73,255,2);
+background: linear-gradient(0deg, rgba(73,255,2,1) 0%, rgba(255,246,0,1) 28%, rgba(255,0,0,1) 54%, rgba(254,1,255,1) 71%, rgba(0,212,255,1) 100%);  */
+height: 100svh;
+}
+
+
+main {
+    
+    
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+   
+}
+
+.inhalt {
+    
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+   
+    width: 80svw;
+}
+
+.leer{
+    width: 10svw;
+}
+
+.bildundtext{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.infos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20svw;
+
+    align-content: flex-start;
+}
+
+.hackermaus_png{
+    
+   
+   
+    width: 60vw;
+    
+    /* border: solid blue 5px;  */
+    
+}
+
+
+
+button {
+    
+    width: 20svw;
+    height: 3svw;
+    background-color: rgb(68, 255, 0);
+
+    border-top: 5px solid rgb(167, 255, 164);
+    border-right: 5px solid rgb(10, 174, 12);
+    border-bottom: 5px solid rgb(0, 48, 6);
+    border-left: 5px solid rgb(72, 255, 0);
+
+    margin-bottom: 1svw;
+}
+
+
+.close {
+    width: 3svw;
+    height: 3svw;
+    background-color: yellow;
+    border-top: 5px solid rgb(255, 246, 164);
+    border-right: 5px solid rgb(174, 149, 10);
+    border-bottom: 5px solid rgb(48, 28, 0);
+    border-left: 5px solid rgb(255, 232, 60);
+
+}
+.close p {
+    font-family: FT88-Regular;
+    color: black;
+    font-size: 2rem;
+}
+
+
+#ueberdiemausis{
+
+
+    
+
+background: rgb(255,216,2);
+background: radial-gradient(circle, rgba(255,216,2,1) 0%, rgba(252,70,107,1) 100%); 
+width: 40svw;
+
+position: fixed;
+top: 20svh;
+left: 20svw;
+overflow: scroll;
+
+}
+.scalloped-box {
+
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    --r: 25px; /* radius of circles */
+    height: 25svw;
+    aspect-ratio: 1;
+    padding: calc(1.5*var(--r));
+    background: #e97f02;
+    mask: 
+      linear-gradient(#000 0 0) no-repeat
+       50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+      radial-gradient(farthest-side,#000 97%,#0000) 
+       0 0/calc(2*var(--r)) calc(2*var(--r)) round;
+  }
+
+#uberdenClub{
+    background: rgb(255,2,247);
+    background: radial-gradient(circle, rgba(255,2,247,1) 0%, rgba(62,19,93,1) 100%);
+    width: 30svw;
+    padding: 9rem;
+    position: fixed;
+    top: 30svh;
+    left: 40svw;
+    overflow: scroll;
+}
+
+.flower {
+    width: 35; /* adjust to control the size */
+    aspect-ratio: 1;
+    --g:/23.606% 23.606% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+    mask: 99.937% 52.512% var(--g),88.923% 81.385% var(--g),63.042% 98.269% var(--g),32.179% 96.716% var(--g),8.124% 77.32% var(--g),0.063% 47.488% var(--g),11.077% 18.615% var(--g),36.958% 1.731% var(--g),67.821% 3.284% var(--g),91.876% 22.68% var(--g),radial-gradient(100% 100%,#000 36.327%,#0000 calc(36.327% + 1px));
+  }
+
+
+
+
+#PopUp_yippie{
+    position: fixed;
+    top: 30svh;
+    left: 20svw;
+    
+
+}
+  .starburst {
+    width: 200px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(100% 50%,75.5% 55.07%,96.19% 69.13%,71.62% 64.44%,85.36% 85.36%,64.44% 71.62%,69.13% 96.19%,55.07% 75.5%,50% 100%,44.93% 75.5%,30.87% 96.19%,35.56% 71.62%,14.64% 85.36%,28.38% 64.44%,3.81% 69.13%,24.5% 55.07%,0% 50%,24.5% 44.93%,3.81% 30.87%,28.38% 35.56%,14.64% 14.64%,35.56% 28.38%,30.87% 3.81%,44.93% 24.5%,50% 0%,55.07% 24.5%,69.13% 3.81%,64.44% 28.38%,85.36% 14.64%,71.62% 35.56%,96.19% 30.87%,75.5% 44.93%);
+  }
+
+
+#PopUp_Konfetti{
+    background-color: aquamarine;
+    position: fixed;
+    top: 40svh;
+    left: 10svw;
+
+}
+
+/* HTML: <div class="wiggly-box"></div> */
+.wiggly-box {
+    --s: 20px;  /* control the size of the wave */
+    --w: 400px; /* preferred image width */
+    
+    width: round(var(--w),4*var(--s));
+    aspect-ratio: 1;
+    border: calc(2*var(--s)) solid #0000;
+    padding: calc(3*var(--s)/2);
+    box-sizing: border-box;
+    background: #4ECDC4;
+    mask: 
+      conic-gradient(#000 0 0) no-repeat
+       50%/calc(100% - 6*var(--s)) calc(100% - 6*var(--s)),
+      radial-gradient(var(--s),#000 100%,#0000 calc(100% + 1px)) 
+       0 0/calc(4*var(--s)) calc(4*var(--s)),
+      radial-gradient(var(--s),#0000 calc(100% - 1px),#000) 
+       var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)) padding-box;
+  }
+
+
+
+#PopUp_kontakt{
+    position: fixed;
+    top: 45svh;
+    left: 10svw;
+    width: 40svw;
+    padding: 8rem;
+
+}
+.hexagon {
+    height: 30svw; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: rgb(82,180,58);
+background: radial-gradient(circle, rgba(82,180,58,1) 0%, rgba(29,250,253,1) 50%, rgba(252,69,225,1) 100%); 
+  }

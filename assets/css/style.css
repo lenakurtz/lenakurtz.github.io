@@ -1,0 +1,241 @@
+/* --------------------------------------------------------------------------------------
+FONTS
+-------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: computa;
+    src: url(fonts/ComputoMonospace-p73xO.ttf);
+}
+
+@font-face {
+    font-family: FT88-Regular;
+    src: url(fonts/FT88-Regular.otf);
+}
+
+@font-face {
+    font-family: Monaco;
+    src: url(fonts/Monaco.ttf);
+}
+
+@font-face {
+    font-family: Hydrogen;
+    src: url(fonts/Hydrogen\ Whiskey.otf);
+}
+
+@font-face {
+    font-family: CompSmooth;
+    src: url(fonts/LazenbyCompSmooth.ttf);
+}
+@font-face {
+    font-family: CompLiquid;
+    src: url(fonts/LazenbyCompLiquid.ttf);
+}
+
+@font-face {
+    font-family: Garamont;
+    src: url(fonts/AppleGaramond.ttf);
+}
+
+@font-face {
+    font-family: Garamont_bold;
+    src: url(fonts/AppleGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: Garamont_bold_italic;
+    src: url(fonts/AppleGaramond-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: ComicSans;
+    src: url(fonts/ComicSansMS.ttf);
+}
+
+@font-face {
+    font-family: Chicago;
+    src: url(fonts/ChicagoFLF.ttf);
+}
+
+@font-face {
+    font-family: Pixelscript;
+    src: url(fonts/PF\ Pixelscript\ Pro\ Regular.ttf);
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------
+RESET
+-------------------------------------------------------------------------------------- */
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    /* font-size: 2vw; */
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+/* --------------------------------------------------------------------------------------
+HINTERGRUND
+-------------------------------------------------------------------------------------- */
+
+body {
+    /* background-color: rgb(28, 28, 45); */
+    
+    width: 100svw;
+    /* background-image: url(/assets/img/index/karos.png); */
+    /* height: 100svh;
+    overflow: scroll; */
+}
+
+/* --------------------------------------------------------------------------------------
+GRID
+-------------------------------------------------------------------------------------- */
+
+
+
+.grid_1{
+    display: grid;
+    grid-template-rows: repeat(200, 4rem);
+    grid-template-columns:repeat(20,5%)  ;
+    /* border:solid rgb(22, 54, 22) 4px; */
+    position: absolute;
+    height: 400svh;
+    width: 100svw;
+    z-index: 3;
+    overflow: hidden;
+
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------
+Navigation
+-------------------------------------------------------------------------------------- */
+nav{
+   
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100svw;
+
+  
+
+    
+    position: sticky;
+    top: 0px;  
+    z-index: 10;
+
+   
+
+
+}
+
+
+
+.nav_element_1:hover  {
+    
+    color: blue;
+    background-color: rgb(0, 255, 225);
+}
+
+
+.nav_element_1{
+
+    display: flex;
+    align-items: center;
+    height: 2vw;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin: .5rem;
+
+    background-color: rgb(208, 207, 207);
+    border-left: 3px solid rgb(237, 237, 237);
+    border-top: 3px solid rgb(252, 249, 249);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+
+    
+
+}
+.nav_element_1 a {
+    font-family: cofo-sans-pixel, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+
+

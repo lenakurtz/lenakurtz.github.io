@@ -1,0 +1,31 @@
+
+h1 {
+    font-family: computa, Arial, Helvetica, sans-serif;
+    font-size: 4svw;
+}
+
+
+
+.computer{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    
+}
+
+.glitch_01{
+    text-align: center;
+    z-index: 2;
+
+}
+
+.muster_01{
+    position: fixed;
+    top: 0;
+    height: 100svw;
+    z-index: 1;
+}
+
+.text{
+    background-color: blue;
+}

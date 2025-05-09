@@ -1,0 +1,200 @@
+/* --------------------------------------------------------------------------------------
+FONTS 
+-------------------------------------------------------------------------------------- */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3svw;
+    color: rgb(255, 217, 0);
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5svw;
+    color: rgb(255, 217, 0);
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.2svw;
+    line-height: 1.3svw;
+    text-decoration: underline;
+}
+
+h4{
+    font-family: FT88-Regular;
+    font-size: 1.5svw;
+    color: rgb(255, 217, 0);
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1svw;
+    color: rgb(255, 217, 0);
+
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2svw;
+    line-height: 1.3svw;
+}
+
+/* --------------------------------------------------------------------------------------
+GRZUNDLEGENDES 
+-------------------------------------------------------------------------------------- */
+
+body{
+    background-color: rgb(21, 21, 21);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100svh;
+    overflow: hidden;
+}
+
+
+/* --------------------------------------------------------------------------------------
+section fenster ganz 
+-------------------------------------------------------------------------------------- */
+section{
+
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(129,14,14);
+    background: linear-gradient(0deg, rgba(129,14,14,1) 0%, rgb(210, 0, 0) 100%);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top:4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right:4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+
+    width: 60svw;
+    height: 80svh;
+
+    margin: 10svh;
+
+
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------
+fenser links icons
+-------------------------------------------------------------------------------------- */
+
+.links{
+
+    width: 20svw;
+    height: 80svh;
+    padding: 1svw;
+
+    
+
+    /* border: solid mediumslateblue 3px; */
+}
+
+
+.icon{
+
+    
+    border-left: 2px solid rgb(240, 240, 240);
+    border-top:2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(83, 83, 83);
+    border-right: 2px solid rgb(87, 87, 87);
+    
+
+}
+
+.zeit{
+   
+    border-left: 2px solid rgb(240, 240, 240);
+    border-top:2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(83, 83, 83);
+    border-right: 2px solid rgb(87, 87, 87);
+
+    text-align: center;
+
+    margin-bottom: 1svw;
+    padding: .2svw;
+
+}
+
+.geld{
+    border-left: 2px solid rgb(240, 240, 240);
+    border-top:2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(83, 83, 83);
+    border-right: 2px solid rgb(87, 87, 87);
+
+    text-align: center;
+    margin-bottom: 1svw;
+    padding: .2svw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* --------------------------------------------------------------------------------------
+fenster rechts inhalt 
+-------------------------------------------------------------------------------------- */
+
+.rechts{
+
+    width: 40svw;
+    height: 80svh;
+
+    margin-top: 1svw;
+
+    /* border: solid rgb(48, 193, 65) 3px; */
+
+
+}
+
+
+.text-fenster{
+
+   height: 50svh;
+    margin-top: 1svw;
+    margin-bottom: 1svw;
+    margin-right: 2svw;
+    padding: .5svw;
+
+    overflow: scroll;
+
+
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid rgb(107, 107, 107);
+    border-top:2px solid rgb(109, 109, 109);
+    border-bottom: 2px solid rgb(200, 200, 200);
+    border-right: 2px solid rgb(210, 210, 210);
+    box-shadow: 0 1 1 0.8px rgb(0, 0, 0);
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------
+spasiges
+-------------------------------------------------------------------------------------- */
+
+
+button{
+    width: 18svw;
+    padding: .5rem;
+    margin-top: 1svw;
+    margin-bottom: 1svw;
+    font-family: FT88-Regular, Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+
+    background-color: rgb(183, 183, 183);
+}
+
+button:hover {
+    color: rgb(143, 253, 0);
+}
+

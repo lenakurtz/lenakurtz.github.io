@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    font-family: ComicSans;
+    background-image: url(../../assets/img/index/firefox.gif);
+    background-size: 48%;
+    background-repeat: no-repeat;
+    
+}
+/* main {
+    display: grid;
+    grid-template-rows:repeat(1, 50vw);
+    grid-template-columns:repeat(2, 1fr)
+} */
+header {
+    margin: 1vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    margin: 1vw;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #left {
+} */
+
+h1 {
+    font-size: 5vw;
+    color: white;
+    text-shadow: 1px 1px 7px rgb(207, 136, 4);
+}
+
+p {
+    color: white;
+    font-size: 2vw;
+}
+ul{
+    text-align: left;
+    width: 60%;
+}
+li{
+list-style: inside;
+color: white;
+text-shadow: 1px 1px 1px rgb(201, 171, 127);
+font-size: 1.1vw;
+
+}

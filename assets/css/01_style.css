@@ -1,0 +1,717 @@
+/* --------------------------------------------------------------------------------------
+FONTS
+-------------------------------------------------------------------------------------- */
+h1 {
+    font-family: Garamont_bold_italic;
+    font-size: 1.5vw;
+    
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vw;
+   
+    
+
+}
+
+h3{
+    font-family: Garamont_bold_italic;
+    font-size: 3vw;
+    writing-mode: vertical-lr;
+
+}
+
+h4{
+    font-family: Chicago;
+    font-size: 2vw;
+    writing-mode: vertical-rl;
+
+}
+
+h5{
+    font-family: FT88-Regular;
+    font-size: 2vw;
+    writing-mode: vertical-rl;
+    letter-spacing: -3px;
+
+}
+
+h6{
+    font-family: Garamont;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+
+}
+
+h7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    writing-mode: vertical-lr;
+}
+
+
+/* --------------------------------------------------------------------------------------
+GRUNDLEGENDES
+-------------------------------------------------------------------------------------- */
+
+
+
+body{
+    background-color: black;
+    background-image: url(../../assets/img/01_img/tapete2.png);
+    
+}
+main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+article{
+    text-align: center;
+    
+}
+
+
+/* --------------------------------------------------------------------------------------
+MAC
+-------------------------------------------------------------------------------------- */
+
+
+
+.mac{
+    background-color: rgb(177, 177, 177);
+    height: 55svw;
+    width: 40svw;
+
+
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    align-items: start;
+
+    border-left: 1svw solid gray;
+    border-right: 1svw solid gray;
+    
+    border-top: 3svw solid rgb(252, 249, 249);
+    border-bottom: 5svw solid rgb(20, 20, 20);
+    
+
+    border-radius: 10px;
+
+    
+
+}
+.mac_screen{
+
+    background-color: rgb(255, 255, 255);
+    height: 22svw;
+    width: 45svw;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3svw;
+    padding-top: 2svw;
+
+    border-left: 1svw solid gray;
+    border-right: 1svw solid gray;
+    
+    border-top: 1svw solid rgb(67, 67, 67);
+    border-bottom: 1svw solid rgb(228, 226, 226);
+    border-radius: 20px;
+
+    
+    background-image: url(../../assets/img/01_img/macpaint.png);
+    background-size: 30svw;
+    background-repeat: no-repeat;
+    
+
+    background-color: black;
+
+}
+
+.screen_innen{
+   
+    margin: 5svw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.5svw;
+
+   
+    
+    
+
+}
+.mac_logo{
+    
+    background-image: url(../../assets/img/01_img/applelogo84.png);
+    background-size: 2.3svw;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 4svw;
+    width: 3.5svw;
+
+    position: absolute;
+    top: 45svw;
+    left: 35svw;
+
+    border-left: .3svw solid gray;
+    border-right: .3svw solid gray;
+    
+    border-top: .3svw solid rgb(67, 67, 67);
+    border-bottom: .3svw solid rgb(228, 226, 226);
+    background-color: white;
+    
+}
+
+.mac_disc{
+    position: absolute;
+    top: 45svw;
+    left: 50svw;
+
+    height: 1.5svw;
+    width: 17svw;
+
+    border-left: .3svw solid gray;
+    border-right: .3svw solid gray;
+    
+    border-top: .3svw solid rgb(67, 67, 67);
+    border-bottom: .3svw solid rgb(228, 226, 226);
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.winkekatze{
+
+    position:absolute;
+    width: 20svw;
+    height: 28svw;
+
+    top: 33svw;
+    left: 7svw;
+    
+    
+    background-image: url(../../assets/img/02_img/winkekatze2.gif);
+    background-size: 19.5svw;
+    background-repeat: no-repeat;
+
+}
+
+
+/* --------------------------------------------------------------------------------------
+REGALBRETT
+-------------------------------------------------------------------------------------- */
+
+
+.regalbrett{
+    background-image: url(../../assets/img/01_img/holz2.webp);
+    width: 100svw;
+    height: 5svh;
+
+}
+
+.buecherregal{
+    padding-top: 2svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------
+floppy
+-------------------------------------------------------------------------------------- */
+.floppy{
+    width: 20svw;
+    height: 20svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2svw;
+    
+    background-image: url(../../assets/img/01_img/floppy.png);
+    background-size: 19.5svw;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.schwarzesloch{
+    background-image: url(../../assets/img/01_img/schwarzesloch.jpg);
+    background-size: 25svw;
+    border-radius: 50%;
+    width: 25svw;
+    height: 25svw;
+    box-shadow: 3px 4px 96px 106px rgba(0,0,0,1);
+
+    
+}
+
+.bilderrahmen{
+    border-left: 1svw solid rgb(230, 208, 158);
+    border-right: 1svw solid rgb(230, 208, 158);
+    
+    border-top: 1svw solid rgb(255, 252, 245);
+    border-bottom: 1svw solid rgb(99, 90, 68);
+
+    box-shadow: inset 3px 4px 96px -3px rgba(0,0,0,1);
+
+    width: 35svw;
+    
+
+}
+
+
+.postit {
+    width: 15svw;
+    position: absolute;
+    top: 58svw;
+    left: 80svw;
+}
+
+
+/* --------------------------------------------------------------------------------------
+Whole earth catalogue
+-------------------------------------------------------------------------------------- */
+
+
+.button_WEC {
+    width: 9%;
+    height: 63svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 3svw;
+   
+   background-image:  url(../../assets/img/01_img/WEC_img.png);
+   background-size: 9svw;
+
+    background-color: rgba(255, 255, 255, 0);
+   
+
+    color: rgb(255, 255, 255);
+    border: none;
+   
+}
+
+
+#PopUp_WEC {
+    
+    position: fixed;
+    top: 10svh;
+    left: 5svw;    
+
+    width: 40svw;
+    height: 19svw;
+    /* display:none; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------
+INTERNET ARCHIVE
+-------------------------------------------------------------------------------------- */
+
+
+.button_IA {
+    width: 12svw;
+    height: 54svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5svw;
+   
+    background-image: url(../../assets/img/01_img/IA_img.png);
+    background-size: 12svw;
+    background-color: rgba(240, 248, 255, 0);
+
+    color: rgb(255, 255, 255);
+    border: none;
+   
+}
+
+
+#PopUp_IA {
+  
+    position:fixed;
+    top: 50svh;
+    left: 50svw;    
+
+    width: 40svw;
+    height: 19svw;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+
+
+/* --------------------------------------------------------------------------------------
+Informationsnetzwerke
+-------------------------------------------------------------------------------------- */
+
+
+.button_M {
+    width: 7svw;
+    height: 68svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 2svw;
+   
+    background-image: url(../../assets/img/01_img/IN_img.png);
+    background-size: 7svw;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+   
+}
+
+
+#PopUp_M {
+  
+    position:fixed;
+    top: 40svh;
+    left: 10svw;    
+
+    width: 40svw;
+    height: 19svw;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+
+/* --------------------------------------------------------------------------------------
+DATEN
+-------------------------------------------------------------------------------------- */
+
+
+.button_D {
+    width: 5svw;
+    height: 59svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1svw;
+   
+
+   background-image: url(../../assets/img/01_img/D_img.png);
+    background-size: 5svw;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+   
+}
+
+
+#PopUp_D {
+  
+    position:fixed;
+    top: 20svh;
+    left: 30svw;    
+
+    width: 40svw;
+    height: 19svw;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+/* --------------------------------------------------------------------------------------
+SCIHUB
+-------------------------------------------------------------------------------------- */
+
+
+.button_SH {
+    width: 10svw;
+    height: 65svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4svw;
+   
+
+    background-image: url(../../assets/img/01_img/SH_img.png);
+    background-size: 10svw;
+    background-color: rgba(245, 222, 179, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+   
+}
+
+
+#PopUp_SH {
+  
+    position:fixed;
+    top: 70svh;
+    left: 2svw;    
+
+    width: 40svw;
+    height: 19svw;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+/* --------------------------------------------------------------------------------------
+Ciber Feminsim Index 
+-------------------------------------------------------------------------------------- */
+
+
+.button_CF {
+    width: 6svw;
+    height: 63svh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4svw;
+   
+
+    background-image: url(../../assets/img/01_img/CF_img.png);
+    background-size: 6svw;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+   
+}
+
+
+#PopUp_CF {
+  
+    position:fixed;
+    top: 10svh;
+    left: 60svw;    
+
+    width: 40svw;
+    height: 19svw;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+
+    padding-left: 1svw;
+    padding-top: .5vw;
+    padding-bottom: 2.5vw;
+
+    color: black;
+   
+    text-align: left;
+    background-color: rgb(195, 195, 195);
+    border-left: 4px solid rgb(155, 155, 155);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(95, 95, 95);
+    border-right: 4px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+    
+}
+
+
+
+
+/* ==============================
+FÜR ALLE GÜLTIG 
+================================= */
+
+
+.w95_buttons{
+    width: 7svw;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+   
+
+}
+.close{
+    
+    height: 1.9vw;
+    width: 6svw;
+    
+    margin-bottom: .5svw;
+    
+    background-color: rgb(195, 195, 195);
+    border-left: 2px solid rgb(155, 155, 155);
+    border-top:2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(95, 95, 95);
+    border-right: 2px solid gray;
+    box-shadow: 0 0 0 0.8px rgb(0, 0, 0);
+    
+  
+
+}
+
+.close p {
+    font-family: FT88-Regular,Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    border: dotted black 1px;
+    
+
+
+}
+
+
+
+.close a {
+    font-family: FT88-Regular,Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    
+    
+
+}
+
+
+
+
+.w95_headline{
+    width: 100svw;
+    margin: .5svw;
+    
+}
+.w95_headline p {
+   font-family:  Garamont_bold_italic, Arial, Helvetica, sans-serif;
+   font-size: 2vw;
+    
+}
+
+.w95_inhalt{
+   display: flex;
+   justify-content: space-around;
+
+}
+
+.w95_textfeld{
+    width: 30svw;
+    height: 14svw;
+    padding: 0.5vw;
+    background-color: rgb(250, 241, 215);
+    border-right: 2px solid rgb(155, 155, 155);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(95, 95, 95);
+    border-left: 2px solid gray;
+
+    overflow: scroll;
+   
+}
+
+.w95_textfeld p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2svw;
+}
+
+

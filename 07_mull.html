@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/07_syle.css">
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Mülle nicht in den Daten anderer Leute!</title>
+</head>
+<body>
+    <nav>
+      <div class="nav_element_1"> <a href="101diemäuse.html">about Häckermäuse FFC</a> </div>
+      <div class="nav_element_1"> <a href="index.html"> Index</a> </div>
+      <!-- <div class="nav_element_1"> <a href="/einfacheAnsicht/eA_01_zugang.html">einfache Ansicht</a></div>  -->
+      <div class="nav_element_1"> <a href="102käse.html">hier gibts Käse</a></div> 
+    </nav>
+   
+<header>
+   <h1> Mülle nicht in den Daten anderer Leute.</h1>
+  </header>
+  <main>
+    <section id="Infos">
+      <article> 
+        <p> Hier sind die Informationen, die dein Browser bereits ohne den Einsatz von Cookies über dich verrät:</p>
+        <div id="browserinfo"></div></article>
+      
+      <article id="mapholder"></article>
+      <article class="text" >
+        <p id="text2"></p>
+      </article>
+      <!-- <article class="text">
+        <p> </p>
+        <div id="text1"></div>
+      </article> -->
+      
+      </section>
+
+      <section id="dumpster">
+
+<img id="dumpsterimg" src="assets/img/07_img/MullZu.png" alt="Image of a Dumpster"> 
+
+      </section>
+<section id="Introduction">
+  <article class="text" id="text3"><p>Am Computer produzieren wir viele Daten.
+   Wer im Internet unterwegs ist, tauscht viele Daten mit den Webseiten, die er besucht, aus. Die meisten Webseiten sammeln Daten über die Menschen, die sie besuchen.
+   Die Massen an Datenmüll, die wir jeden Tag im Internet produzieren, können aber sehr wertvoll sein. 
+  </p></article>
+
+  <article class="text"><p>Beim digitalen Dumpster Diving kann man viele spannende Dinge entdecken, dabei kann man allerdings auch schnell die Privatphäre anderer Menschen verletzen, ohne dass diese es überhaupt merken.</p></article>
+
+</section>
+
+    </main>
+        
+  </body>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  
+  <script>
+    getLocation();
+    
+    // let url = navigator.language;
+    
+    // const InfoDoc = document.getElementById("browserinfo");
+    
+    // InfoDoc.innerHTML = url;
+    
+    document.getElementById("dumpster").onclick = function(){
+      document.getElementById('dumpsterimg').src = 'assets/img/07_img/MullAuf.png';
+        const articles = document.querySelectorAll("#Infos > article");
+        console.log("Taking a Dump in the Console");
+        
+        for (let i = 0; i < articles.length; i++) {
+            articles[i].style.opacity = 1;
+        };
+    };
+        
+
+    
+    function getLocation() {
+  const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0,
+  };
+  
+  
+  function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+    document.getElementById('mapholder').innerHTML = "Auweia, hier ist was schief gelaufen, die Seite einfach neuladen <3";
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, error, options);
+   
+  } else { 
+    document.getElementById('mapholder').innerHTML = "Geolocation is not supported by this browser.";
+  }
+  
+};
+
+
+
+
+
+function showPosition(position) {
+  console.log("got Location")
+  let lat = position.coords.latitude ;
+    let long = position.coords.longitude;
+    console.log(lat);
+    
+    
+
+// Where you want to render the map.
+let element = document.getElementById('mapholder');
+
+
+
+// Height has to be set. You can do this in CSS too.
+element.style = 'height:300px;';
+
+// Create Leaflet map on map element.
+var map = L.map(element);
+
+// Add OSM tile layer to the Leaflet map.
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Target's GPS coordinates.
+// var target = L.latLng(coords);
+
+
+
+// Set map's center to target with zoom 14.
+map.setView([lat, long], 14);
+
+// Place a marker on the same location.
+L.marker([lat, long]).addTo(map);
+
+
+let sister = document.getElementById("browserinfo").attributes;
+let value = sister.getNamedItem("style").value;  
+
+
+if(value === null) { 
+  element.style.opacity = 0;
+}
+else if (value) {
+  element.style.opacity = 1;
+  console.log(value);
+}
+  else { 
+    element.style.opacity = 0;
+  }
+
+
+}
+let text =
+"<p>Browser CodeName: " + navigator.appCodeName + "</p>" +
+"<p>Browser Name: " + navigator.appName + "</p>" +
+"<p>Welche Version verwendest du: " + navigator.appVersion + "</p>" +
+"<p>Cookies aktiviert?: " + navigator.cookieEnabled + "</p>" +
+"<p>Welche Sprache sprichst du?: " + navigator.language + "</p>" +
+"<p>Ist der Browser Online: " + navigator.onLine + "</p>" +
+"<p>Welches Platform verwendest du?: " + navigator.platform + "</p>" +
+"<p>Dein User-agent header: " + navigator.userAgent + "</p>";
+
+document.getElementById("browserinfo").innerHTML = text;
+
+ let length = history.length;
+
+document.getElementById("text2").innerHTML = 
+"Du hast bereits " + length + " verschiedene Seiten besucht, bevor du hier gelandet bist.";
+
+</script>
+</html>

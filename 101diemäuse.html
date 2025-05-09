@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/101_style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/amt6wmf.css">
+    <title>Die Mäuse</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_element_1"> <a href="x_01diemäuse.html">about Häckermäuse FFC</a> </div>
+        <div class="nav_element_1"> <a href="index.html"> index </a> </div>
+        <!-- <div class="nav_element_1"> <p> einfache Ansicht </p></div> -->
+        <div class="nav_element_1"> <a href="x_02käse.html">hier gibts Käse</a></div> 
+    </nav>
+   
+<main>
+<div class="leer"></div>
+<article class="inhalt">
+       
+        <img  src="assets/img/x_01/willkommen_03.png">
+       <div class="bildundtext">
+
+      
+        <div class="hackermaus_png">
+
+            <!-- <img src="/assets/img/x_01/portrait_mausis.png" onmouseover="this.src='/assets/img/x_01/portrait_mausis_03.png';" onmouseout="this.src='/assets/img/x_01/portrait_mausis.png';"> -->
+    
+            <img src="assets/img/x_01/Mausis.gif" width="900">
+        </div>
+        <div class="infos">
+            <button  onclick="showInfo_01()">
+                <p> über uns </p>
+          </button>
+            <div id="ueberdiemausis" class="scalloped-box" style="display: none;">
+            <!-- <button  class="close" onclick="close_showInfo_01()" > <p>x</p>  </button>   -->
+              <p>Hallo wir sind die Häckermäuse. <br> Das sind unsere Hobbies:</p>
+            <li> zwei verschiedene Socken tragen </li>
+            <li> Nachts um zwei LED Dinos löten </li>
+            <li> (Programme) stricken </li>
+            <li> Nudeln mit Pesto essen </li>
+            <li> auf sehr hohe Berge laufen </li>
+            <li> Videogames </li>
+            <li> Computerautismus haben (aber das eigentlich eher Hauptberuflich) </li>
+            <li> asking people if they have games on their phone </li>
+            <li> Computer auseinander bauen </li>
+            <li> Wände oder Bäume hochklettern </li>
+                </div>
+            <button onclick="showInfo_02()">
+                <p> über den FFC  </p>
+            </button>
+
+                <div id="uberdenClub" class="flower" style="display: none;">
+                    <p> FFC steht für Firefox-Fan-Club</p>
+
+                </div>
+            <button  onclick="showConfetti();">
+                <p> yippie </p>
+            </button>
+            
+
+            <button onclick="showConfettiZwei();">
+                <p> Noch mehr Konfetti </p>
+            </button>
+            <!-- <div id="PopUp_Konfetti" class="wiggly-box" style="display: none;">
+                <p> ok cool da ist ultra deer geile berg inbruck is ne schnecke</p>
+            </div> -->
+
+            <button onclick="showInfo_05()">
+                <p> Kontakt  </p>
+            </button>
+            <div id="PopUp_kontakt" class="hexagon" style="display: none;">
+              <p>hier kannst du uns kontaktieren </p>
+               <li>
+                instagram: @lena_ku17 @manchmal.ziemlich.bunt 
+               </li>
+               <li>
+                world-wide-web: <a href="https://janacoded.github.io/"> https://janacoded.github.io/</a>
+               </li>
+               
+            </div>
+        </div>
+    </div>
+</article>
+
+<div class="leer"></div>
+    
+      
+</main> 
+
+
+<script>
+    function showInfo_01() {
+      var x = document.getElementById("ueberdiemausis");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function close_showInfo_01() {
+      var x = document.getElementById("ueberdiemausis");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+
+    function showInfo_02() {
+      var x = document.getElementById("uberdenClub");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function showInfo_03() {
+      var x = document.getElementById("PopUp_yippie");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function showInfo_04() {
+      var x = document.getElementById("PopUp_Konfetti");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function showInfo_05() {
+      var x = document.getElementById("PopUp_kontakt");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="assets/js/script.js">
+    </script>
+</body>
+</html>

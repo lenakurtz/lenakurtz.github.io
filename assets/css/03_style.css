@@ -1,0 +1,132 @@
+/* body {
+    max-height: 10svh;
+    width: 10vw;
+} */
+
+h1 {
+   color: black;
+    font-size: 4vw;
+    font-family: Monaco;
+}
+
+header{
+     position: absolute;
+    z-index: 15;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+button {
+    padding: 1vw;
+    font-family: Monaco;
+    font-size: 0.8vw;
+    display: none;
+    border: solid 2px black;
+    margin: 0.1vw;
+    margin-top: 2vw;
+}
+button:hover{
+    background-color: rgb(238, 232, 149);
+}
+
+
+
+main {
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 3.5vw);
+    overflow:hidden;
+    width: 100vw;
+height: 100vh;
+
+}
+
+#pixelgrid {
+
+    position: absolute;
+    top: 1vw;
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(25, 1vw);
+    
+}
+#stageOne{
+    
+    opacity: 0;
+  
+mix-blend-mode:normal;
+}
+
+#stageTwo{
+   
+    opacity: 0;
+    mix-blend-mode:darken;
+    
+    
+}
+#stageThree{
+ 
+    opacity: 0;
+
+}
+#stageFour{
+   
+    opacity: 0;
+  
+
+    
+}
+
+#stageFour > article {
+color: rgb(73, 232, 73);
+text-shadow: 1px 1px 1px rgb(84, 236, 29);
+font-size: 1.4vw;;
+
+}
+
+article{
+    width: 30vw;
+    overflow: show;
+}
+
+article > p {
+    width: 20vw;
+    font-size: 1.6vw;
+    font-family: Monaco;
+    
+}
+
+.pattern{
+    width: 30vw;
+    height:fit-content;
+    font-size: 3vw;
+    overflow:hidden;
+    color: black;
+}
+
+.stars{
+    color: rgb(179, 179, 179);
+    font-size: 8vw;
+    mix-blend-mode:difference;
+    width: 35vw;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+}
+
+
+.text {
+    font-size: 2vw;
+    color: rgb(182, 22, 22);
+    text-shadow: 1px 1px 2px rgb(120, 34, 12);
+    z-index: 100;
+    width: 20vw;
+}
