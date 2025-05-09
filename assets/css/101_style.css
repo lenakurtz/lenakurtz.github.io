@@ -162,7 +162,10 @@ overflow: scroll;
     top: 30svh;
     left: 40svw;
     overflow: scroll;
+  
 }
+
+
 
 .flower {
     width: 35; /* adjust to control the size */
@@ -172,7 +175,9 @@ overflow: scroll;
   }
 
 
-
+.flower > p{
+    font-size: 1.5rem;
+}
 
 #PopUp_yippie{
     position: fixed;
