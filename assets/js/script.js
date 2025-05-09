@@ -255,6 +255,10 @@ function showReadme(){
 
 };
 
+function maus(){
+  alert("squeak! squeak!");
+};
+
 function hideReadme(){
 
     const readmeText = document.getElementById("readme_text");

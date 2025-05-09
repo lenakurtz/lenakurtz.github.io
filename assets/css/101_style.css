@@ -103,6 +103,11 @@ button {
     margin-bottom: 1svw;
 }
 
+button:hover {
+    cursor:pointer;
+      background-color: rgb(90, 220, 42);
+}
+
 
 .close {
     width: 3svw;

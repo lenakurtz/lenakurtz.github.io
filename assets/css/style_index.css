@@ -291,6 +291,7 @@ button:hover{
     
     box-shadow: 0 0 0 2px blue;
     background-color: magenta;
+     cursor:pointer;
 
 }
 button:visited{
@@ -534,6 +535,10 @@ GIFS und BILDER
 .hackermaus_png {
     grid-row: 15;
     grid-column: 1 / span 8;
+}
+#maus:hover {
+     transform: scale(140%);
+    filter: drop-shadow(1vw 1vw 2vw rgb(205, 95, 196));
 }
 
 .firefox_gif{
